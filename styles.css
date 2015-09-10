@@ -5,12 +5,13 @@
 .square {
   background: black;
   width: 150px;
-  height: 150px;
+  height: 75px;
   margin: 10px;
   float: left;
   color: white;
+  padding-top: 40px;
   text-align: center;
-  vertical-align: center;
+  font-size: 25px;
 }
 
 
