@@ -32,8 +32,7 @@
 		
 		function numberdisappear(e){
 			var square = e.target;
-			var t = document.createTextNode(square.id);
-			square.removeChild(t);
+			square.firstChild.remove();
 		}
 	
 		
