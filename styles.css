@@ -1,0 +1,15 @@
+.btn {
+  float: left;
+}
+
+.square {
+  background: black;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  float: left;
+  color: white;
+  text-align:center;
+}
+
+
