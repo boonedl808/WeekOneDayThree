@@ -35,14 +35,28 @@
 			square.firstChild.remove();
 		}
 		
-		function getRandomColor() {
- 			var letters = '0123456789ABCDEF'.split('');
- 			var color = '#';
- 			for (var i = 0; i < 6; i++ ) {
-     		color += letters[Math.floor(Math.random() * 16)];
- 		}
-			 return color;
-		}
+		
+		function getRandomColor(e) {
+			square.addEventListener("click", getRandomColor);
+            e.target.style.backgroundColor = Math.floor(Math.random()*16777216).toString(16);           
+         }
+		
+		function clickremove(e) {
+            var squareIDNum = parseInt(e.target.id);
+              if (squareIDNum %2 === 0) {
+                     if (e.target.previousSibling === null) {
+                         alert("Nuh uh uh");
+                     }
+                     else {
+                         e.target.previousSibling.remove();
+                     }
+             }   
+               
+                    else if (e.target.nextSibling === null) {
+                        alert("Not gonna do it");
+                        
+                 }
+             }
      		
 			
 </script>
